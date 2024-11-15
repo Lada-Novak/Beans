@@ -1,0 +1,41 @@
+.box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: center;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.home_container {
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin: auto auto;
+  text-align: center;
+  align-items: center;
+}
+
+.home_container img {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+.title {
+  background-color: #e7d2cd;
+}
+
+.info p {
+  color: #e83a4b;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 790px) {
+  .home_container {
+    display: block;
+  }
+}

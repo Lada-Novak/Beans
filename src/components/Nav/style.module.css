@@ -1,0 +1,127 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #e7d2cd;
+}
+
+
+/* .burgerButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #e83a4b;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.burgerButton:hover {
+  color: #df6b7b;
+} */
+/* Кнопка-бургер */
+.burgerButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Иконка бургера в виде трех полосок */
+.burgerButton span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  background-color: #e83a4b;
+  border-radius: 2px;
+  transform-origin: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.burgerButton span::before,
+.burgerButton span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #e83a4b;
+  border-radius: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.burgerButton span::before {
+  transform: translateY(-8px);
+}
+
+.burgerButton span::after {
+  transform: translateY(8px);
+}
+
+
+.burgerButton.open {
+  transform: rotate(45deg);
+}
+
+.burgerButton.open span {
+  background-color: #e83a4b;
+}
+
+.burgerButton.open span::before {
+  transform: rotate(-90deg) translateX(0px);
+  bottom: none;
+}
+
+.burgerButton.open span::after {
+  transform: rotate(-90deg) translateX(-8px);
+  width: 0;
+}
+
+.menu {
+  display: flex;
+  margin: 40px auto;
+  max-width: 500px;
+  gap: 20px;
+}
+
+
+.menu a {
+  font-size: 20px;
+  color: #e83a4b;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #d11b34;
+}
+
+@media (max-width: 920px) {
+  .burgerButton {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.open {
+    display: flex;
+  }
+}

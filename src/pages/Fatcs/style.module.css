@@ -1,0 +1,82 @@
+
+.container {
+  height: auto;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 50px 0;
+  font-size: 48px;
+  text-align: center;
+  font-family: "Lobster";
+  color: #e83a4b;
+  background-color: #e7d2cd;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.factsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.factCard {
+  padding: 40px 20px;
+  background-color: #e6c2c2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.factTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #e83a4b;
+}
+
+.factDescription {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media screen and (min-width: 1201px) {
+  .factCard {
+    padding: 40px 20px;
+  }
+
+  .factTitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .factsList{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .factTitle {
+    font-size: 26px;
+  }
+
+  .factDescription {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .factsList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .factTitle {
+    font-size: 30px;
+  }
+}

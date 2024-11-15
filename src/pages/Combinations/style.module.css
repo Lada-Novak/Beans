@@ -1,0 +1,78 @@
+.container {
+  padding: 20px;
+  height: auto;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  background-color: #e7d2cd;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.error {
+  text-align: center;
+  color: #e83a4b;
+  font-size: 1.2rem;
+}
+
+.combinationsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.combinationCard {
+  background-color: #e6c2c2;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comboName {
+  font-size: 1.5rem;
+  color: #e83a4b;
+  margin-bottom: 10px;
+}
+
+.comboDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.flavorsTitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+.flavorsList {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+
+/* @media screen and (min-width: 1201px) {} */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .combinationsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+
+@media screen and (max-width: 767px) {
+  .combinationsList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+}

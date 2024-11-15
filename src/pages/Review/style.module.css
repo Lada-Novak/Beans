@@ -1,0 +1,39 @@
+.title {
+  background-color: #e7d2cd;
+}
+
+.form{
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  background-color: #e6c2c2;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+.input{
+  margin: 0 0 10px 5px;
+  border-radius:15px;
+  padding: 15px;
+  border: 1px solid transparent;
+}
+.select{
+  margin-bottom: 10px;
+  width: 250px;
+  border-radius:10px;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+.button{
+  width: 250px;
+  padding: 10px;
+  border-radius:10px;
+  border: 1px solid transparent;
+  background-color: #e83a4b;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+.button:hover{
+  background-color: #c45964;
+}

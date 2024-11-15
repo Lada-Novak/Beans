@@ -1,0 +1,19 @@
+.title{
+  background-color: #e7d2cd;
+}
+.subtitle{
+  font-size: 1.5rem;
+  color: #e83a4b;
+  margin-bottom: 10px;
+}
+.box{
+  background-color: #e6c2c2;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+.text{
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}

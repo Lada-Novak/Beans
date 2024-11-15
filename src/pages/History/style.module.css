@@ -1,0 +1,60 @@
+
+.container {
+  height: auto;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.title {
+  background-color: #e7d2cd;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.historyList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.milestoneCard {
+  background-color: #e6c2c2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.milestoneYear {
+  margin-bottom: 10px;
+  color:#e83a4b;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.milestoneEvent {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .historyList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .historyList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
