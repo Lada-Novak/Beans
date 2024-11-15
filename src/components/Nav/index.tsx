@@ -20,13 +20,13 @@ const Nav = () => {
 
       
       <div className={`${style.menu} ${isOpen ? style.open : ""}`}>
-        <Link to="/beans">Beans</Link>
-        <Link to="/facts">Facts</Link>
-        <Link to="/recipe">Recipe</Link>
-        <Link to="/сombinations">Combinations</Link>
-        <Link to="/history">History</Link>
-        <Link to="/about">About</Link>
-        <Link to="/review">Review</Link>
+        <Link to="/Beans/beans">Beans</Link>
+        <Link to="/Beans/facts">Facts</Link>
+        <Link to="/Beans/recipe">Recipe</Link>
+        <Link to="/Beans/сombinations">Combinations</Link>
+        <Link to="/Beans/history">History</Link>
+        <Link to="/Beans/about">About</Link>
+        <Link to="/Beans/review">Review</Link>
       </div>
     </nav>
   );

@@ -14,7 +14,7 @@ import Loader from "./components/Loader";
 
 const router = createBrowserRouter([
   {
-    path : "/",
+    path : "/Beans",
     element : <Layout/>,
     loader: Loader,
     children : [
