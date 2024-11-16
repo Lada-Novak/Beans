@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
 import Beans from "./pages/Beans";
-import Facts from "./pages/Fatcs";
+import Facts from "./pages/Facts";
 import About from "./pages/About";
 import Recipe from "./pages/Recipe";
 import Combinations from "./pages/Combinations";
